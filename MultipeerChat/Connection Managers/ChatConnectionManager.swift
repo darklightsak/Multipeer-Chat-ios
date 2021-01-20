@@ -55,6 +55,14 @@ class ChatConnectionManager: NSObject, ObservableObject {
         connectedToChat = true
         session = MCSession(peer: myPeerId, securityIdentity: nil, encryptionPreference: .required)
         session?.delegate = self
+        guard
+            let window = UIApplication.shared.windows.first,
+            let session = session
+        else { return }
+        
+        let mcBrowsweViewController = MCBrowserViewController(serviceType: ChatConnectionManager.service, session: session)
+        mcBrowsweViewController.delegate = self
+        window.rootViewController?.present(mcBrowsweViewController, animated: true)
     }
 }
 
@@ -111,4 +119,19 @@ extension ChatConnectionManager: MCSessionDelegate {
             self.messages.insert(contentsOf: messages, at: 0)
         }
     }
+}
+
+extension ChatConnectionManager: MCBrowserViewControllerDelegate {
+    func browserViewControllerDidFinish(_ browserViewController: MCBrowserViewController) {
+        browserViewController.dismiss(animated: true) {
+            self.connectedToChat = true
+        }
+    }
+    
+    func browserViewControllerWasCancelled(_ browserViewController: MCBrowserViewController) {
+        session?.disconnect()
+        browserViewController.dismiss(animated: true)
+    }
+    
+    
 }
