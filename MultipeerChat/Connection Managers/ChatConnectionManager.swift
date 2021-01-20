@@ -64,6 +64,27 @@ class ChatConnectionManager: NSObject, ObservableObject {
         mcBrowsweViewController.delegate = self
         window.rootViewController?.present(mcBrowsweViewController, animated: true)
     }
+    
+    func host() {
+        isHosting = true
+        peers.removeAll()
+        messages.removeAll()
+        connectedToChat = true
+        session = MCSession(peer: myPeerId, securityIdentity: nil, encryptionPreference: .required)
+        session?.delegate = self
+        advertiserAssistant = MCNearbyServiceAdvertiser(peer: myPeerId, discoveryInfo: nil, serviceType: ChatConnectionManager.service)
+        advertiserAssistant?.delegate = self
+        advertiserAssistant?.startAdvertisingPeer()
+    }
+    
+    func leaveChat() {
+        isHosting = false
+        connectedToChat = false
+        advertiserAssistant?.stopAdvertisingPeer()
+        messages.removeAll()
+        session = nil
+        advertiserAssistant = nil
+    }
 }
 
 extension ChatConnectionManager: MCSessionDelegate {
@@ -132,6 +153,10 @@ extension ChatConnectionManager: MCBrowserViewControllerDelegate {
         session?.disconnect()
         browserViewController.dismiss(animated: true)
     }
-    
-    
+}
+
+extension ChatConnectionManager: MCNearbyServiceAdvertiserDelegate {
+    func advertiser(_ advertiser: MCNearbyServiceAdvertiser, didReceiveInvitationFromPeer peerID: MCPeerID, withContext context: Data?, invitationHandler: @escaping (Bool, MCSession?) -> Void) {
+        invitationHandler(true, session)
+    }
 }
