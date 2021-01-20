@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,8 @@
 		D3EADD3925B7D1FB00EC85AE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3EADD3825B7D1FB00EC85AE /* Preview Assets.xcassets */; };
 		D3EADD3C25B7D1FB00EC85AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3EADD3A25B7D1FB00EC85AE /* LaunchScreen.storyboard */; };
 		D3EADD4C25B7D33F00EC85AE /* ChatSessionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EADD4B25B7D33F00EC85AE /* ChatSessionView.swift */; };
+		D3EADD5625B7D9D500EC85AE /* ChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EADD5525B7D9D500EC85AE /* ChatMessage.swift */; };
+		D3EADD5A25B7DAD800EC85AE /* ChatConnectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EADD5925B7DAD800EC85AE /* ChatConnectionManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		D3EADD3B25B7D1FB00EC85AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D3EADD3D25B7D1FB00EC85AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D3EADD4B25B7D33F00EC85AE /* ChatSessionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatSessionView.swift; sourceTree = "<group>"; };
+		D3EADD5525B7D9D500EC85AE /* ChatMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessage.swift; sourceTree = "<group>"; };
+		D3EADD5925B7DAD800EC85AE /* ChatConnectionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatConnectionManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +65,8 @@
 				D3EADD2F25B7D1F900EC85AE /* AppDelegate.swift */,
 				D3EADD3125B7D1F900EC85AE /* SceneDelegate.swift */,
 				D3EADD3325B7D1F900EC85AE /* ContentView.swift */,
+				D3EADD5825B7DAAC00EC85AE /* Connection Managers */,
+				D3EADD5425B7D9AD00EC85AE /* Models */,
 				D3EADD4525B7D2FD00EC85AE /* Chat Views */,
 				D3EADD3525B7D1FB00EC85AE /* Assets.xcassets */,
 				D3EADD3A25B7D1FB00EC85AE /* LaunchScreen.storyboard */,
@@ -84,6 +90,22 @@
 				D3EADD4B25B7D33F00EC85AE /* ChatSessionView.swift */,
 			);
 			path = "Chat Views";
+			sourceTree = "<group>";
+		};
+		D3EADD5425B7D9AD00EC85AE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D3EADD5525B7D9D500EC85AE /* ChatMessage.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D3EADD5825B7DAAC00EC85AE /* Connection Managers */ = {
+			isa = PBXGroup;
+			children = (
+				D3EADD5925B7DAD800EC85AE /* ChatConnectionManager.swift */,
+			);
+			path = "Connection Managers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -114,6 +136,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1230;
 				LastUpgradeCheck = 1230;
+				ORGANIZATIONNAME = "Surasak W";
 				TargetAttributes = {
 					D3EADD2B25B7D1F900EC85AE = {
 						CreatedOnToolsVersion = 12.3;
@@ -121,7 +144,7 @@
 				};
 			};
 			buildConfigurationList = D3EADD2725B7D1F900EC85AE /* Build configuration list for PBXProject "MultipeerChat" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -159,6 +182,8 @@
 				D3EADD3025B7D1F900EC85AE /* AppDelegate.swift in Sources */,
 				D3EADD3225B7D1F900EC85AE /* SceneDelegate.swift in Sources */,
 				D3EADD3425B7D1F900EC85AE /* ContentView.swift in Sources */,
+				D3EADD5A25B7DAD800EC85AE /* ChatConnectionManager.swift in Sources */,
+				D3EADD5625B7D9D500EC85AE /* ChatMessage.swift in Sources */,
 				D3EADD4C25B7D33F00EC85AE /* ChatSessionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -228,7 +253,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -283,7 +308,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
