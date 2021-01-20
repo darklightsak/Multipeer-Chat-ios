@@ -13,6 +13,7 @@
 		D3EADD3625B7D1FB00EC85AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3EADD3525B7D1FB00EC85AE /* Assets.xcassets */; };
 		D3EADD3925B7D1FB00EC85AE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3EADD3825B7D1FB00EC85AE /* Preview Assets.xcassets */; };
 		D3EADD3C25B7D1FB00EC85AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3EADD3A25B7D1FB00EC85AE /* LaunchScreen.storyboard */; };
+		D3EADD4C25B7D33F00EC85AE /* ChatSessionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EADD4B25B7D33F00EC85AE /* ChatSessionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		D3EADD3825B7D1FB00EC85AE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D3EADD3B25B7D1FB00EC85AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D3EADD3D25B7D1FB00EC85AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3EADD4B25B7D33F00EC85AE /* ChatSessionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatSessionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				D3EADD2F25B7D1F900EC85AE /* AppDelegate.swift */,
 				D3EADD3125B7D1F900EC85AE /* SceneDelegate.swift */,
 				D3EADD3325B7D1F900EC85AE /* ContentView.swift */,
+				D3EADD4525B7D2FD00EC85AE /* Chat Views */,
 				D3EADD3525B7D1FB00EC85AE /* Assets.xcassets */,
 				D3EADD3A25B7D1FB00EC85AE /* LaunchScreen.storyboard */,
 				D3EADD3D25B7D1FB00EC85AE /* Info.plist */,
@@ -73,6 +76,14 @@
 				D3EADD3825B7D1FB00EC85AE /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D3EADD4525B7D2FD00EC85AE /* Chat Views */ = {
+			isa = PBXGroup;
+			children = (
+				D3EADD4B25B7D33F00EC85AE /* ChatSessionView.swift */,
+			);
+			path = "Chat Views";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +159,7 @@
 				D3EADD3025B7D1F900EC85AE /* AppDelegate.swift in Sources */,
 				D3EADD3225B7D1F900EC85AE /* SceneDelegate.swift in Sources */,
 				D3EADD3425B7D1F900EC85AE /* ContentView.swift in Sources */,
+				D3EADD4C25B7D33F00EC85AE /* ChatSessionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
