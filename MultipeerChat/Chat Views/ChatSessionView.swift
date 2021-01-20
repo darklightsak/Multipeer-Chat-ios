@@ -8,18 +8,20 @@
 import SwiftUI
 
 struct ChatSessionView: View {
+    @ObservedObject private var chatConnectionManager = ChatConnectionManager()
+    
     var body: some View {
         VStack(spacing: 30) {
             Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
             
             Button(action: {
-                print("Join a Chat Session")
+                chatConnectionManager.join()
             }, label: {
                 Label("Join a Chat Session", systemImage: "arrow.up.right.and.arrow.down.left.rectangle")
             })
             
             Button(action: {
-                print("Host a Chat Session")
+                chatConnectionManager.host()
             }, label: {
                     Label("Host a Chat Session", systemImage: "plus.circle")
             })

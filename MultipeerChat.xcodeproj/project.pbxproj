@@ -16,6 +16,9 @@
 		D3EADD4C25B7D33F00EC85AE /* ChatSessionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EADD4B25B7D33F00EC85AE /* ChatSessionView.swift */; };
 		D3EADD5625B7D9D500EC85AE /* ChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EADD5525B7D9D500EC85AE /* ChatMessage.swift */; };
 		D3EADD5A25B7DAD800EC85AE /* ChatConnectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EADD5925B7DAD800EC85AE /* ChatConnectionManager.swift */; };
+		D3EADD5E25B8288500EC85AE /* TimestampView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EADD5D25B8288500EC85AE /* TimestampView.swift */; };
+		D3EADD6225B829FD00EC85AE /* Formatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EADD6125B829FD00EC85AE /* Formatters.swift */; };
+		D3EADD6925B82BB500EC85AE /* MessageBodyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EADD6825B82BB500EC85AE /* MessageBodyView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,9 @@
 		D3EADD4B25B7D33F00EC85AE /* ChatSessionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatSessionView.swift; sourceTree = "<group>"; };
 		D3EADD5525B7D9D500EC85AE /* ChatMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessage.swift; sourceTree = "<group>"; };
 		D3EADD5925B7DAD800EC85AE /* ChatConnectionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatConnectionManager.swift; sourceTree = "<group>"; };
+		D3EADD5D25B8288500EC85AE /* TimestampView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimestampView.swift; sourceTree = "<group>"; };
+		D3EADD6125B829FD00EC85AE /* Formatters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formatters.swift; sourceTree = "<group>"; };
+		D3EADD6825B82BB500EC85AE /* MessageBodyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageBodyView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +74,7 @@
 				D3EADD5825B7DAAC00EC85AE /* Connection Managers */,
 				D3EADD5425B7D9AD00EC85AE /* Models */,
 				D3EADD4525B7D2FD00EC85AE /* Chat Views */,
+				D3EADD6025B829CE00EC85AE /* Utility */,
 				D3EADD3525B7D1FB00EC85AE /* Assets.xcassets */,
 				D3EADD3A25B7D1FB00EC85AE /* LaunchScreen.storyboard */,
 				D3EADD3D25B7D1FB00EC85AE /* Info.plist */,
@@ -88,6 +95,8 @@
 			isa = PBXGroup;
 			children = (
 				D3EADD4B25B7D33F00EC85AE /* ChatSessionView.swift */,
+				D3EADD6825B82BB500EC85AE /* MessageBodyView.swift */,
+				D3EADD5D25B8288500EC85AE /* TimestampView.swift */,
 			);
 			path = "Chat Views";
 			sourceTree = "<group>";
@@ -106,6 +115,14 @@
 				D3EADD5925B7DAD800EC85AE /* ChatConnectionManager.swift */,
 			);
 			path = "Connection Managers";
+			sourceTree = "<group>";
+		};
+		D3EADD6025B829CE00EC85AE /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				D3EADD6125B829FD00EC85AE /* Formatters.swift */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,9 +198,12 @@
 			files = (
 				D3EADD3025B7D1F900EC85AE /* AppDelegate.swift in Sources */,
 				D3EADD3225B7D1F900EC85AE /* SceneDelegate.swift in Sources */,
+				D3EADD6225B829FD00EC85AE /* Formatters.swift in Sources */,
 				D3EADD3425B7D1F900EC85AE /* ContentView.swift in Sources */,
+				D3EADD6925B82BB500EC85AE /* MessageBodyView.swift in Sources */,
 				D3EADD5A25B7DAD800EC85AE /* ChatConnectionManager.swift in Sources */,
 				D3EADD5625B7D9D500EC85AE /* ChatMessage.swift in Sources */,
+				D3EADD5E25B8288500EC85AE /* TimestampView.swift in Sources */,
 				D3EADD4C25B7D33F00EC85AE /* ChatSessionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
