@@ -21,7 +21,7 @@ struct MessageBodyView: View {
                     .font(.body)
                     .padding(8)
                     .foregroundColor(.white)
-                    .background(message.isUser ? Color.green : Color.black)
+                    .background(message.isUser ? Color.green : Color(UIColor.systemGray))
                     .cornerRadius(9)
                 TimestampView(message: message)
                 
