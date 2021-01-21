@@ -20,6 +20,7 @@
 		D3EADD6225B829FD00EC85AE /* Formatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EADD6125B829FD00EC85AE /* Formatters.swift */; };
 		D3EADD6925B82BB500EC85AE /* MessageBodyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EADD6825B82BB500EC85AE /* MessageBodyView.swift */; };
 		D3EADD7125B9578800EC85AE /* ChatListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EADD7025B9578800EC85AE /* ChatListView.swift */; };
+		D3EADD7525B95AF700EC85AE /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EADD7425B95AF700EC85AE /* ChatView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		D3EADD6125B829FD00EC85AE /* Formatters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formatters.swift; sourceTree = "<group>"; };
 		D3EADD6825B82BB500EC85AE /* MessageBodyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageBodyView.swift; sourceTree = "<group>"; };
 		D3EADD7025B9578800EC85AE /* ChatListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListView.swift; sourceTree = "<group>"; };
+		D3EADD7425B95AF700EC85AE /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				D3EADD4B25B7D33F00EC85AE /* ChatSessionView.swift */,
+				D3EADD7425B95AF700EC85AE /* ChatView.swift */,
 				D3EADD7025B9578800EC85AE /* ChatListView.swift */,
 				D3EADD6825B82BB500EC85AE /* MessageBodyView.swift */,
 				D3EADD5D25B8288500EC85AE /* TimestampView.swift */,
@@ -203,6 +206,7 @@
 				D3EADD3225B7D1F900EC85AE /* SceneDelegate.swift in Sources */,
 				D3EADD6225B829FD00EC85AE /* Formatters.swift in Sources */,
 				D3EADD3425B7D1F900EC85AE /* ContentView.swift in Sources */,
+				D3EADD7525B95AF700EC85AE /* ChatView.swift in Sources */,
 				D3EADD6925B82BB500EC85AE /* MessageBodyView.swift in Sources */,
 				D3EADD5A25B7DAD800EC85AE /* ChatConnectionManager.swift in Sources */,
 				D3EADD7125B9578800EC85AE /* ChatListView.swift in Sources */,

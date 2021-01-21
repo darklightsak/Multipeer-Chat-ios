@@ -25,6 +25,13 @@ struct ChatSessionView: View {
             }, label: {
                     Label("Host a Chat Session", systemImage: "plus.circle")
             })
+            
+            NavigationLink(
+                destination: ChatView()
+                    .environmentObject(chatConnectionManager),
+                isActive: $chatConnectionManager.connectedToChat) {
+                EmptyView()
+            }
         }
         .navigationTitle("Chat")
     }
