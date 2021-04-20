@@ -1,2 +1,2 @@
 # Multipeer-Chat-ios
-Using multipeer for messaging between iOS devices (SwiftUI)
+Using multipeer (peer-to-peer connectivity) for messaging between iOS devices (SwiftUI)
