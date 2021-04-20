@@ -1,2 +1,2 @@
 # Multipeer-Chat-ios
-on progress 🔜 
+Using multipeer for messaging between iOS devices
